@@ -1,25 +1,60 @@
-# RunProof (Public Surface)
+<!-- RUNPROOF_README_BEGIN -->
 
-This repository is the **public surface** for RunProof (links + release shelf only).
+# RunProof — Execution Proof API by Chamia
 
-- Entry (Pages): https://runproof-chamia.pages.dev/
+RunProof is a **low-output attestation** API.
+It **does not store your original inputs/outputs**. It stores only:
+
+- non-sensitive tags (supplementary fields)
+- cryptographic hash (e.g., sha256:<hex>)
+- signature
+- chain link
+- audit logs
+
+**Do not submit PII or secrets. Send hashes only.**
+
+
+## Fixed links (Public surface)
+
 - Browser Playground: https://runproof-chamia.pages.dev/playground/
-- Free key: https://runproof-chamia.pages.dev/free/claim/
-- Pricing / Upgrade: https://runproof-chamia.pages.dev/subscribe.htm
+- Verify Portal: https://runproof-chamia.pages.dev/portal/
 - Docs: https://runproof-chamia.pages.dev/docs/
-- Reference / OpenAPI: https://runproof-chamia.pages.dev/ref/
-- API base (Workers): https://runproof.chamia-20260215.workers.dev
+- OpenAPI: https://runproof-chamia.pages.dev/ref/openapi.yaml
+- API Base (Workers): https://runproof.chamia-20260215.workers.dev
+- Public releases (evidence assets): https://github.com/Chamia0215/runproof-public/releases
 
-## Try it in the browser
-Start with the **Browser Playground**. You can receive a Free key, paste it into the Playground, and use the same API shape when you upgrade later.
+## Public docs (source of truth)
 
-## Releases
-This repository publishes **publish-safe evidence bundles** as Release assets:
-- public-evidence.zip (see Releases) + SHA256 in the release notes.
+- Docs (index): https://runproof-chamia.pages.dev/
+- Freeze statement: https://runproof-chamia.pages.dev/freeze/freeze_v2.md
+- API Reference: https://runproof-chamia.pages.dev/ref/api_reference_v0.1.1.md
+- Data Input Policy: https://runproof-chamia.pages.dev/policy/data_input_policy_v1.md
 
-## What is NOT published here
-- Private source-of-truth repository
-- Internal logs, secrets, raw operational evidence, API keys, Stripe IDs, internal IDs
+## Live API entry (Workers)
 
-> Note: GitHub Releases include an auto-generated **source code archive**.
-> This archive contains only the contents of this public surface repository.
+- https://runproof.chamia-20260215.workers.dev/
+- https://runproof.chamia-20260215.workers.dev/health
+- https://runproof.chamia-20260215.workers.dev/v1/public-key
+
+## Quick start (outline)
+
+1. Hash your input locally: sha256:<hex>
+2. Create receipt (requires API key): POST /v1/receipts
+3. Verify locally using:
+   - public key (GET /v1/public-key)
+   - receipt (GET /v1/receipts/{receipt_id})
+
+## Repo safety rules
+
+- Never commit your local secrets directory (ignored by git).
+- D1 stores api_key_hash only (never store raw API keys)
+
+<!-- RUNPROOF_README_END -->
+
+<!-- README is intentionally minimal -->
+This README is intentionally minimal. The source of truth is the public docs:
+- https://runproof-chamia.pages.dev/docs/
+
+日本語：この README は最小構成です。最新の説明と導線は Pages 側の Docs を正本とします。
+- https://runproof-chamia.pages.dev/docs/
+
