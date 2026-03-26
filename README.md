@@ -14,21 +14,28 @@ It **does not store your original inputs/outputs**. It stores only:
 **Do not submit PII or secrets. Send hashes only.**
 
 
-## Fixed links (Public surface)
+## Quick links (Public surface)
 
-- Browser Playground: https://runproof-chamia.pages.dev/playground/
+- Pages top: https://runproof-chamia.pages.dev/
 - Verify Portal: https://runproof-chamia.pages.dev/portal/
+- Browser Playground: https://runproof-chamia.pages.dev/playground/
 - Docs: https://runproof-chamia.pages.dev/docs/
+- API entry: https://runproof-chamia.pages.dev/api/
+- Business page: https://runproof-chamia.pages.dev/business-index.htm
+- API Reference: https://runproof-chamia.pages.dev/ref/api_reference_v0.1.1.md
 - OpenAPI: https://runproof-chamia.pages.dev/ref/openapi.yaml
+- Freeze statement: https://runproof-chamia.pages.dev/freeze/freeze_v2.md
+- Data Input Policy: https://runproof-chamia.pages.dev/policy/data_input_policy_v1.md
 - API Base (Workers): https://runproof.chamia-20260215.workers.dev
 - Public releases (evidence assets): https://github.com/Chamia0215/runproof-public/releases
 
-## Public docs (source of truth)
+## Public repo role
 
-- Docs (index): https://runproof-chamia.pages.dev/
-- Freeze statement: https://runproof-chamia.pages.dev/freeze/freeze_v2.md
-- API Reference: https://runproof-chamia.pages.dev/ref/api_reference_v0.1.1.md
-- Data Input Policy: https://runproof-chamia.pages.dev/policy/data_input_policy_v1.md
+This public repo is the **public shelf / discovery surface** for RunProof.
+Current public guidance lives on the Pages site above. The development repo remains non-public.
+
+日本語：この public repo は **公開棚 / 発見導線** です。
+現在の説明と導線の正本は Pages 側にあります。開発用リポジトリは非公開です。
 
 ## Live API entry (Workers)
 
@@ -52,9 +59,15 @@ It **does not store your original inputs/outputs**. It stores only:
 <!-- RUNPROOF_README_END -->
 
 <!-- README is intentionally minimal -->
-This README is intentionally minimal. The source of truth is the public docs:
-- https://runproof-chamia.pages.dev/docs/
+This README is intentionally minimal.
 
-日本語：この README は最小構成です。最新の説明と導線は Pages 側の Docs を正本とします。
-- https://runproof-chamia.pages.dev/docs/
+- Start with meaning and public guidance: https://runproof-chamia.pages.dev/docs/
+- Try issuing with a key: https://runproof-chamia.pages.dev/playground/
+- Check a receipt in the browser: https://runproof-chamia.pages.dev/portal/
+
+日本語：この README は最小構成です。
+
+- まず意味と公開導線を見る → https://runproof-chamia.pages.dev/docs/
+- API 発行を試す → https://runproof-chamia.pages.dev/playground/
+- receipt の結果を確認する → https://runproof-chamia.pages.dev/portal/
 
