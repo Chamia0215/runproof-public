@@ -20,6 +20,11 @@ It **does not store your original inputs/outputs**. It stores only:
 - Verify Portal: https://runproof-chamia.pages.dev/portal/
 - Browser Playground: https://runproof-chamia.pages.dev/playground/
 - Docs: https://runproof-chamia.pages.dev/docs/
+- Adoption guide: https://runproof-chamia.pages.dev/docs/adoption.htm
+- Performance guide: https://runproof-chamia.pages.dev/docs/performance.htm
+- FAQ: https://runproof-chamia.pages.dev/docs/faq.htm
+- Flow: https://runproof-chamia.pages.dev/docs/flow.htm
+- Operations: https://runproof-chamia.pages.dev/docs/ops.htm
 - API entry: https://runproof-chamia.pages.dev/api/
 - Business page: https://runproof-chamia.pages.dev/business-index.htm
 - API Reference: https://runproof-chamia.pages.dev/ref/api_reference_v0.1.1.md
@@ -28,6 +33,15 @@ It **does not store your original inputs/outputs**. It stores only:
 - Data Input Policy: https://runproof-chamia.pages.dev/policy/data_input_policy_v1.md
 - API Base (Workers): https://runproof.chamia-20260215.workers.dev
 - Public releases (evidence assets): https://github.com/Chamia0215/runproof-public/releases
+
+## Performance snapshot (2026-03-29)
+
+Reference measurements over the public internet (Japan, Windows PowerShell 7.5.5, sequential runs):
+
+- POST /v1/verify: avg 1427.07 ms, p95 1654.70 ms
+- POST /v1/receipts: avg 1600.06 ms, p95 2118.52 ms
+- Sequential runs: verify ~42.03 req/min, receipts ~37.43 req/min
+- Details: https://runproof-chamia.pages.dev/docs/performance.htm
 
 ## Public repo role
 
@@ -70,4 +84,3 @@ This README is intentionally minimal.
 - まず意味と公開導線を見る → https://runproof-chamia.pages.dev/docs/
 - API 発行を試す → https://runproof-chamia.pages.dev/playground/
 - receipt の結果を確認する → https://runproof-chamia.pages.dev/portal/
-
